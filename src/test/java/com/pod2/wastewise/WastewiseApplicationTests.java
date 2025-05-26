@@ -1,4 +1,4 @@
-package com.pod2.wastewise.wastewise;
+package com.pod2.wastewise;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
