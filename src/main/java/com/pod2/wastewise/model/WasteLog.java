@@ -143,4 +143,21 @@ public class WasteLog {
     public void setWorker(Worker worker) {
         this.worker = worker;
     }
+
+    @Override
+    public String toString() {
+        return "WasteLog{" +
+                "logId='" + logId + '\'' +
+                ", weightCollected=" + weightCollected +
+                ", collectionStartTime=" + collectionStartTime +
+                ", collectionEndTime=" + collectionEndTime +
+                ", createdBy='" + createdBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedBy='" + updatedBy + '\'' +
+                ", updatedDate=" + updatedDate +
+                ", zone=" + zone +
+                ", vehicle=" + vehicle +
+                ", worker=" + worker +
+                '}';
+    }
 }

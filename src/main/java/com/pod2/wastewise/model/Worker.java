@@ -125,4 +125,20 @@ public class Worker {
     public void setRole(Role role) {
         this.role = role;
     }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "workerId='" + workerId + '\'' +
+                ", name='" + name + '\'' +
+                ", contactNumber='" + contactNumber + '\'' +
+                ", contactEmail='" + contactEmail + '\'' +
+                ", workerStatus=" + workerStatus +
+                ", createdBy='" + createdBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedBy='" + updatedBy + '\'' +
+                ", upadatedDate=" + upadatedDate +
+                ", role=" + role +
+                '}';
+    }
 }

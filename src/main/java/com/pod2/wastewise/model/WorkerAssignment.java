@@ -132,4 +132,20 @@ public class WorkerAssignment {
     public void setZone(Zone zone) {
         this.zone = zone;
     }
+
+    @Override
+    public String toString() {
+        return "WorkerAssignment{" +
+                "assignmentId='" + assignmentId + '\'' +
+                ", workerId='" + workerId + '\'' +
+                ", shift=" + shift +
+                ", createdBy='" + createdBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedBy='" + updatedBy + '\'' +
+                ", updatedDate=" + updatedDate +
+                ", assignment=" + assignment +
+                ", worker=" + worker +
+                ", zone=" + zone +
+                '}';
+    }
 }

@@ -120,4 +120,19 @@ public class Assignment {
     public void setRoute(Route route) {
         this.route = route;
     }
+
+    @Override
+    public String toString() {
+        return "Assignment{" +
+                "assignmentId='" + assignmentId + '\'' +
+                ", dateAssigned=" + dateAssigned +
+                ", workerNeeded=" + workerNeeded +
+                ", createdBy='" + createdBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedBy='" + updatedBy + '\'' +
+                ", updatedDate=" + updatedDate +
+                ", vehicle=" + vehicle +
+                ", route=" + route +
+                '}';
+    }
 }

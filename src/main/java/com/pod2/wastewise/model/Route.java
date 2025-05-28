@@ -104,4 +104,18 @@ public class Route {
     public void setZone(Zone zone) {
         this.zone = zone;
     }
+
+    @Override
+    public String toString() {
+        return "Route{" +
+                "routeId='" + routeId + '\'' +
+                ", routeName='" + routeName + '\'' +
+                ", pathDetails='" + pathDetails + '\'' +
+                ", createdBy='" + createdBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedBy='" + updatedBy + '\'' +
+                ", updatedDate=" + updatedDate +
+                ", zone=" + zone +
+                '}';
+    }
 }

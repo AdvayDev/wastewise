@@ -48,4 +48,13 @@ public class Role {
     public void setWorkers(List<Worker> workers) {
         this.workers = workers;
     }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "roleId='" + roleId + '\'' +
+                ", role=" + role +
+                ", workers=" + workers +
+                '}';
+    }
 }

@@ -90,4 +90,6 @@ public class Zone {
     public void setUpdatedDate(LocalDateTime updatedDate) {
         this.updatedDate = updatedDate;
     }
+
+
 }

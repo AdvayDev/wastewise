@@ -122,4 +122,19 @@ public class PickupSchedule {
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
+
+    @Override
+    public String toString() {
+        return "PickupSchedule{" +
+                "scheduleId='" + scheduleId + '\'' +
+                ", frequency=" + frequency +
+                ", pickupLocation='" + pickupLocation + '\'' +
+                ", timeSlotStartTime=" + timeSlotStartTime +
+                ", timeSlotEndTime=" + timeSlotEndTime +
+                ", status=" + status +
+                ", zone=" + zone +
+                ", worker=" + worker +
+                ", vehicle=" + vehicle +
+                '}';
+    }
 }

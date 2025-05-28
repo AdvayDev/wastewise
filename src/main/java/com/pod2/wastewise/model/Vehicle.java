@@ -107,4 +107,6 @@ public class Vehicle {
     public void setUpdatedDate(LocalDateTime updatedDate) {
         this.updatedDate = updatedDate;
     }
+
+
 }
