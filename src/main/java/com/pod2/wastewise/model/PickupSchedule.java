@@ -15,6 +15,8 @@ public class PickupSchedule {
     @Enumerated(EnumType.STRING)
     private Frequency frequency;
 
+    private String pickupLocation;
+
     private Timestamp timeSlotStartTime;
     private Timestamp timeSlotEndTime;
     private PickupStatus status;
@@ -33,13 +35,14 @@ public class PickupSchedule {
 
     public PickupSchedule(){}
 
-    public PickupSchedule(String scheduleId, Frequency frequency,
+    public PickupSchedule(String scheduleId, Frequency frequency, String pickupLocation,
                           Timestamp timeSlotStartTime, Timestamp timeSlotEndTime,
                           PickupStatus status, Zone zone,
                           Worker worker, Vehicle vehicle) {
         super();
         this.scheduleId = scheduleId;
         this.frequency = frequency;
+        this.pickupLocation = pickupLocation;
         this.timeSlotStartTime = timeSlotStartTime;
         this.timeSlotEndTime = timeSlotEndTime;
         this.status = status;
@@ -58,6 +61,14 @@ public class PickupSchedule {
 
     public Frequency getFrequency() {
         return frequency;
+    }
+
+    public String getPickupLocation() {
+        return pickupLocation;
+    }
+
+    public void setPickupLocation(String pickupLocation) {
+        this.pickupLocation = pickupLocation;
     }
 
     public void setFrequency(Frequency frequency) {
