@@ -20,6 +20,8 @@ public class IdGenerator {
     private VehicleRepository vehicleRepository;
     @Autowired
     private AssignmentRepository assignmentRepository;
+    @Autowired
+    private PickupScheduleRepository pickupScheduleRepository;
 
     public String generateRoleId() {
         long count = roleRepository.countAll();
@@ -50,5 +52,10 @@ public class IdGenerator {
     public String generateAssignmentId() {
         long count = assignmentRepository.countAll();
         return String.format("%03d", count + 1);
+    }
+
+    public String generatePickupId(){
+        long count = pickupScheduleRepository.countAll();
+        return String.format("%03d", count +2);
     }
 }
