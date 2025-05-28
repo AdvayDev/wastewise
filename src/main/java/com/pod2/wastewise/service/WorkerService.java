@@ -79,7 +79,7 @@ public class WorkerService {
         workerTemp.setContactEmail(worker.getContactEmail());
         workerTemp.setWorkerStatus(worker.getWorkerStatus());
         workerTemp.setUpdatedBy(worker.getUpdatedBy());
-        workerTemp.setUpdatedDate(worker.getUpadatedDate());
+        workerTemp.setUpdatedDate(worker.getUpdatedDate());
         logger.info("Updated worker with id {}", worker.getWorkerId());
 
         return workerRepository.save(workerTemp);

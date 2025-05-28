@@ -20,7 +20,7 @@ public class Worker {
     private String createdBy;
     private LocalDateTime createdDate;
     private String updatedBy;
-    private LocalDateTime upadatedDate;
+    private LocalDateTime updatedDate;
 
     @ManyToOne
     @JoinColumn(name = "role_id")
@@ -40,7 +40,7 @@ public class Worker {
         this.createdBy = createdBy;
         this.createdDate = createdDate;
         this.updatedBy = updatedBy;
-        this.upadatedDate = upadatedDate;
+        this.updatedDate = upadatedDate;
         this.role = role;
     }
 
@@ -110,12 +110,12 @@ public class Worker {
         this.updatedBy = updatedBy;
     }
 
-    public LocalDateTime getUpadatedDate() {
-        return upadatedDate;
+    public LocalDateTime getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpadatedDate(LocalDateTime upadatedDate) {
-        this.upadatedDate = upadatedDate;
+    public void setUpdatedDate(LocalDateTime updatedDate) {
+        this.updatedDate = updatedDate;
     }
 
     public Role getRole() {
@@ -137,7 +137,7 @@ public class Worker {
                 ", createdBy='" + createdBy + '\'' +
                 ", createdDate=" + createdDate +
                 ", updatedBy='" + updatedBy + '\'' +
-                ", upadatedDate=" + upadatedDate +
+                ", updatedDate=" + updatedDate +
                 ", role=" + role +
                 '}';
     }
