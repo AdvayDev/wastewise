@@ -2,14 +2,10 @@ package com.pod2.wastewise.dto;
 
 import com.pod2.wastewise.model.Role;
 import com.pod2.wastewise.model.enums.WorkerStatus;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 
 import java.time.LocalDateTime;
 
-public class WorkerDTO {
+public class WorkerRequestDTO {
     private String workerId;
 
     private String name;
@@ -25,9 +21,9 @@ public class WorkerDTO {
 
     private Role role;
 
-    public WorkerDTO(){}
+    public WorkerRequestDTO(){}
 
-    public WorkerDTO(String workerId, String name, String contactNumber, String contactEmail, WorkerStatus workerStatus, String createdBy, LocalDateTime createdDate, String updatedBy, LocalDateTime upadatedDate, Role role) {
+    public WorkerRequestDTO(String workerId, String name, String contactNumber, String contactEmail, WorkerStatus workerStatus, String createdBy, LocalDateTime createdDate, String updatedBy, LocalDateTime upadatedDate, Role role) {
         super();
         this.workerId = workerId;
         this.name = name;
