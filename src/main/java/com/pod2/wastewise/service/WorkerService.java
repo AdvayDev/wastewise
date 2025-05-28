@@ -1,4 +1,4 @@
-package com.pod2.wastewise.Service;
+package com.pod2.wastewise.service;
 
 import com.pod2.wastewise.model.Worker;
 import com.pod2.wastewise.repository.WorkerRepository;
