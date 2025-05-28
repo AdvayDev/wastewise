@@ -1,5 +1,6 @@
 package com.pod2.wastewise.Service;
 
+import com.pod2.wastewise.model.Worker;
 import com.pod2.wastewise.repository.WorkerRepository;
 import com.pod2.wastewise.utility.IdGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,5 +16,10 @@ public class WorkerService {
 
     public WorkerService(WorkerRepository workerRepository){
         this.workerRepository = workerRepository;
+    }
+
+    public Worker createWorker(Worker worker){
+        worker.setWorkerId(idGenerator.generateWorkerId());
+        return workerRepository.save(worker);
     }
 }
