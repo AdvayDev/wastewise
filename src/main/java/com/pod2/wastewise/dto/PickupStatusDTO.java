@@ -1,19 +1,19 @@
 package com.pod2.wastewise.dto;
 
 
-import com.pod2.wastewise.model.enums.VehicleStatus;
+import com.pod2.wastewise.model.enums.PickupStatus;
 
 import java.sql.Timestamp;
 
 public class PickupStatusDTO {
-    private String vehicleId;
-    private VehicleStatus status;
-    private String scheduleId;
-    private String pickupLocation;
-    private Timestamp startTime;
-    private Timestamp endTime;
+    private final String vehicleId;
+    private PickupStatus status;
+    private final String scheduleId;
+    private final String pickupLocation;
+    private final Timestamp startTime;
+    private final Timestamp endTime;
 
-    public PickupStatusDTO(String vehicleId, VehicleStatus status, String scheduleId, String pickupLocation, Timestamp startTime, Timestamp endTime) {
+    public PickupStatusDTO(String vehicleId, PickupStatus status, String scheduleId, String pickupLocation, Timestamp startTime, Timestamp endTime) {
         this.vehicleId = vehicleId;
         this.status = status;
         this.scheduleId = scheduleId;
@@ -26,7 +26,7 @@ public class PickupStatusDTO {
         return vehicleId;
     }
 
-    public VehicleStatus getStatus() {
+    public PickupStatus getStatus() {
         return status;
     }
 

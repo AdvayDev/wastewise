@@ -19,6 +19,8 @@ public class PickupSchedule {
 
     private Timestamp timeSlotStartTime;
     private Timestamp timeSlotEndTime;
+
+    @Enumerated(EnumType.STRING)
     private PickupStatus status;
 
     @ManyToOne
